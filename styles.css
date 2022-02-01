@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "resources/fervent-ui/fervent-ui.css";
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --off-white-bg-color: #fff7ed;
+    --primary-color: #fb923c;
+    --secondary-color: #42919E;
+    --black-text-color: black;
+    --white-text-color: white;
+}
+
+body {
+    background-color: var(--off-white-bg-color);
+}
+
+.nav-bar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -0.5rem;
+    /* margin-bottom: 1rem; */
+    background-color: var(--off-white-bg-color);
+    color: var(--black-text-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+}
+
+.main-title {
+    padding: 0.5rem 1rem 0.75rem 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline;
+    padding: 0.5rem 0.75rem;
+    text-align: right;
+}
+
+.hero-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    background-color:var(--primary-color);
+    color: var(--white-text-color);
+    margin-top: -1rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    height: 75vh;
+}
+
+.hero-section * {
+    text-align: center;
+}
+
+.hero-section img {
+    max-width: 700px;
+}
+
+.hero-section h1 {
+    max-width:50rem;
+    font-size: 4rem;
+}
+
+.hero-section h2 {
+    margin-top:-1rem;
+    max-width: 40rem;
+    font-size: 1.25rem;
+}
+
+.hero-section p {
+    max-width: 30rem;
+    font-size: 1rem;
+}
+
+.installation-header {
+    font-size: 2rem;
+    margin: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.installation-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.installation-section * {
+    text-align: center;
+    max-width: 40rem;
+}
+
+.installation-desc p {
+    text-align: left;
+}
+
+.import-script {
+    margin-top: 2rem;
+    width: 867px; 
+    border:0; 
+    overflow:hidden;
+}
+
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer * {
+    padding: 0.25rem auto;
+    margin: 0.25rem auto;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.social-icons-container ul {
+    padding-inline-start: 0px;
+}
+
+.social-icons-container ul li {
+    list-style: none;
+    display: inline;
+    padding: 0.5rem 0.75rem;
+}
+
+.social-icons {
+    width: 30px;
+}
