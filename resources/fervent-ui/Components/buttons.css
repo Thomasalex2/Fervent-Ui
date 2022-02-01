@@ -1,0 +1,20 @@
+.btn-container {
+    margin: 1rem 0.5rem;
+}
+
+.primary-btn {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.25rem 0.5rem;
+}
+
+.secondary-btn {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.25rem 0.5rem;
+}

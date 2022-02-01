@@ -1,0 +1,28 @@
+.badge {
+    position: absolute;
+    background-color:var(--primary-color);
+    color: var(--text-color);
+    border-radius: 100px;
+    z-index: 10;
+}
+
+.bdg-small {
+    font-size:0.5rem;
+    padding:0.25rem 0.5rem;
+    right: -5px;
+    top:-5px;
+}
+
+.bdg-med {
+    font-size: 0.7rem;
+    padding: 0.45rem 0.65rem;
+    right: -10px;
+    top: -10px;
+}
+
+.bdg-lrg {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    right: -15px;
+    top: -15px;
+}
