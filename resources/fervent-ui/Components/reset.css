@@ -1,0 +1,15 @@
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}

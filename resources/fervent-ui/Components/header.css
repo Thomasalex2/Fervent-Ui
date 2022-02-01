@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    position: sticky;
+    top:0px;
+    align-items: center;
+    background-color:var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    margin: auto -5px;
+    justify-content: flex-start;
+    gap: 20px;
+    z-index:5;
+}
+
+.nav-btn-style {
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.5rem;
+}
+
+.nav-btn-style:hover {
+    color: var(--secondary-color);
+    border-radius: 50px;
+}
+
+.header-btns {
+    margin-left: auto;
+}
