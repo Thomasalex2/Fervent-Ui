@@ -11,5 +11,17 @@ a {
 }
 
 a:active {
-    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+* {
+    padding-inline-start: 0px;
 }
