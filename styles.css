@@ -8,6 +8,7 @@
     --secondary-color: #42919E;
     --black-text-color: black;
     --white-text-color: white;
+    --border-color: black;
 }
 
 body {
@@ -21,12 +22,9 @@ body {
     flex-direction: row;
     align-items: center;
     margin: -0.5rem;
-    /* margin-bottom: 1rem; */
-    background-color: var(--off-white-bg-color);
-    color: var(--black-text-color);
+    background-color: var(--primary-color);
+    color: var(--off-white-bg-color);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-bottom-left-radius:20%;
-    border-bottom-right-radius:20%;
 }
 
 .main-title {
@@ -46,13 +44,10 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    /* gap: 1rem; */
-    background-color:var(--primary-color);
-    color: var(--white-text-color);
     margin-top: -1rem;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-    height: 75vh;
+    height: 70vh;
 }
 
 .hero-section * {
@@ -65,13 +60,11 @@ body {
 
 .hero-section h1 {
     max-width:50rem;
-    font-size: 4rem;
 }
 
-.hero-section h2 {
+.hero-section h4 {
     margin-top:-1rem;
     max-width: 40rem;
-    font-size: 1.25rem;
 }
 
 .hero-section p {
@@ -109,36 +102,42 @@ body {
     overflow:hidden;
 }
 
-
-footer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+.docs-grid-layout {
+    display:grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
 }
 
-footer * {
-    padding: 0.25rem auto;
-    margin: 0.25rem auto;
+.nav-bar {
+    grid-area: header;
 }
 
-.social-icons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.drawer {
+    grid-area: sidebar;
 }
 
-.social-icons-container ul {
-    padding-inline-start: 0px;
+section {
+    grid-area: main;
+    margin: 2rem;
 }
 
-.social-icons-container ul li {
-    list-style: none;
-    display: inline;
-    padding: 0.5rem 0.75rem;
+
+.example-container * {
+    margin: 1rem;
 }
 
-.social-icons {
-    width: 30px;
+.example-script {
+    text-align: center;
+}
+
+.example-script iframe {
+    margin: 2rem;
+    overflow: auto;
+    width: auto;
+    border:0;
 }
