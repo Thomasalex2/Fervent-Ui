@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fervent Ui | Documentation</title>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="docs-grid-layout">
@@ -22,7 +24,7 @@
         </nav>
 
         <div class="drawer">
-            <h4>Components</h4>
+            <h4 class="component-subheading">Components</h4>
             <div class="drawer-btns-container">
                 <a>Typography</a>
                 <a>Avatar</a>
@@ -42,32 +44,170 @@
             <article>
                 <h3>Typography</h3>
                 <p class="title-caption">Check out the below text Utilities</p>
-                <h4>Examples of Heading Texts</h4>
+                <h4 class="component-subheading">Examples of Heading Texts</h4>
                 <p>For heading u can use h1, h2, h3, h4, h5, h6 elements</p>
                 <p>The same font-styling is present for class names h1, h2, h3, h4, h5, h6 class. You can add one of these classes to style the text.</p>
-                <div class="example-container border-medium border-rad-M">
-                    <h1> H1 - Heading 1</h1>
-                    <h2> H2 - Heading 2</h2>
-                    <h3> H3 - Heading 3</h3>
-                    <h4> H4 - Heading 4</h4>
-                    <h5> H5 - Heading 5</h5>
-                    <h6> H6 - Heading 6</h6>
+                <div class="example-container-row border-medium border-rad-M">
+                    <h1 class="ex-heading"> H1 - Heading 1</h1>
+                    <h2 class="ex-heading"> H2 - Heading 2</h2>
+                    <h3 class="ex-heading"> H3 - Heading 3</h3>
+                    <h4 class="ex-heading"> H4 - Heading 4</h4>
+                    <h5 class="ex-heading"> H5 - Heading 5</h5>
+                    <h6 class="ex-heading"> H6 - Heading 6</h6>
                 </div>
                 <div class="example-script">
                     <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253E%2520H1%2520-%2520Heading%25201%2520%253C%252Fh1%253E%250A%253Ch2%253E%2520H2%2520-%2520Heading%25202%2520%253C%252Fh2%253E%250A%253Ch3%253E%2520H3%2520-%2520Heading%25203%2520%253C%252Fh3%253E%250A%253Ch4%253E%2520H4%2520-%2520Heading%25204%2520%253C%252Fh4%253E%250A%253Ch5%253E%2520H5%2520-%2520Heading%25205%2520%253C%252Fh5%253E%250A%253Ch6%253E%2520H6%2520-%2520Heading%25206%2520%253C%252Fh6%253E"
-                    style="width: 1011px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253E%2520H1%2520-%2520Heading%25201%2520%253C%252Fh1%253E%250A%253Ch2%253E%2520H2%2520-%2520Heading%25202%2520%253C%252Fh2%253E%250A%253Ch3%253E%2520H3%2520-%2520Heading%25203%2520%253C%252Fh3%253E%250A%253Ch4%253E%2520H4%2520-%2520Heading%25204%2520%253C%252Fh4%253E%250A%253Ch5%253E%2520H5%2520-%2520Heading%25205%2520%253C%252Fh5%253E%250A%253Ch6%253E%2520H6%2520-%2520Heading%25206%2520%253C%252Fh6%253E"
+                        style="width: 1011px; height: 182px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
             </article>
+
             <hr>
+
             <article>
-                <h3>Typography</h3>
-                <p class="title-caption">Check out the below text Utilities</p>
-                <h4>Examples of Heading Texts</h4>
-                <p>For heading u can use h1, h2, h3, h4, h5, h6 elements</p>
-                <p>The same font-styling is present for class names h1, h2, h3, h4, h5, h6 class. You can add one of these classes to style the text.</p>
+                <h3>Avatar</h3>
+                <p class="title-caption">Avatar can be used to show user's profile picture on profile information page, on navigation bar, in blogs grid items.</p>
+                <h4>Examples of Avatar</h4>
+                <p>Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class avatar and for size add class according to size avatar-large, avatar-medium, avatar-small, avatar-tiny (e.g. class="avatar avatar-medium")</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <img class="avatar avatar-large" src="resources/images/avatar.png">
+                    <img class="avatar avatar-medium" src="resources/images/avatar.png">
+                    <img class="avatar avatar-small" src="resources/images/avatar.png">
+                    <img class="avatar avatar-tiny" src="resources/images/avatar.png">
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2520avatar-large%2522%2520src%253D%2522path_to_img%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522path_to_img%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522path_to_img%2522%253E%250A%253Cimg%2520class%253D%2522avatar%2520avatar-tiny%2522%2520src%253D%2522path_to_img%2522%253E"
+                        style="width: 1011px; height: 143px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <h4 class="component-subheading">Avatar with Badges</h4>
+                <p>The avatar images can also have badges depicting any sort of status, like online, offline, idle</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <div class="badge-container">
+                        <img class="avatar avatar-medium" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-red"></span>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar avatar-medium" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-green"></span>
+                    </div>                    
+                    <div class="badge-container">
+                        <img class="avatar avatar-medium" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-orange"></span>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar avatar-small" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-red"></span>
+                    </div>
+                    <div class="badge-container">
+                        <img class="avatar avatar-small" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-green"></span>
+                    </div>                    
+                    <div class="badge-container">
+                        <img class="avatar avatar-small" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-orange"></span>
+                    </div>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522resources%252Fimages%252Favatar.png%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-bdg%2520bdg-red%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522resources%252Fimages%252Favatar.png%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-bdg%2520bdg-green%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522resources%252Fimages%252Favatar.png%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-bdg%2520bdg-orange%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1011px; height: 293px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Alerts</h3>
+                <p class="title-caption">Alerts are used to attract user's attention for important information without interrupting the user's flow.</p>
+                <h4 class="component-subheading">Examples of Alerts</h4>
+                <p>Snackbar comes with a message section and button section. Messages and buttons can be customized as needed</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <div class="snackbar remove-snackbar-fixed">
+                        <p class="snackbar-msg">This is a test alert message with accept and deny button</p>
+                        <div class="snackbar-btn-container">
+                            <button class="snackbar-primary-btn">ACCEPT</button>
+                            <button class="snackbar-primary-btn">DENY</button>
+                        </div>
+                    </div>
+                    <div class="snackbar remove-snackbar-fixed">
+                        <p class="snackbar-msg">This is a test alert message with retry option</p>
+                        <div class="snackbar-btn-container">
+                            <button class="snackbar-primary-btn">RETRY</button>
+                        </div>
+                    </div>
+                    <div class="snackbar remove-snackbar-fixed">
+                        <p class="snackbar-msg">This is a test alert message with close button</p>
+                        <div class="snackbar-btn-container">
+                            <button class="snackbar-close-btn"><span class="material-icons">close</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522snackbar-msg%2522%253EThis%2520is%2520a%2520test%2520snackbar%2520message%2520with%2520accept%2520and%2520deny%2520button%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-primary-btn%2522%253EACCEPT%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-primary-btn%2522%253EDENY%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522snackbar-msg%2522%253EThis%2520is%2520a%2520test%2520snackbar%2520message%2520with%2520retry%2520option%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-primary-btn%2522%253ERETRY%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522snackbar-msg%2522%253EThis%2520is%2520a%2520test%2520snackbar%2520message%2520with%2520close%2520button%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-close-btn%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eclose%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="width: 1011px; height: 404px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Badges</h3>
+                <p class="title-caption">Badges are being used to display a notification count or status information</p>
+                <h4 class="component-subheading">Examples of Badges</h4>
+                <p>Badges comes can have a numerical value within it to show count, or come plain to indicate statuses. The latter one is shown in the <a>avatar</a> section</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <div class="badge-container">
+                        <img class="avatar avatar-small" src="resources/images/avatar.png">
+                        <span class="avatar-bdg bdg-orange"></span>
+                    </div>
+                    <div class="badge-container">
+                        <button class = "secondary-btn">Notifications</button>
+                        <span class="badge bdg-med bdg-red">20</span>
+                    </div>
+                    <div class="badge-container">
+                        <span class="material-icons">shopping_cart</span>
+                        <span class="badge bdg-tiny bdg-red">15</span>
+                    </div>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522resources%252Fimages%252Favatar.png%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-bdg%2520bdg-orange%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253ENotifications%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-med%2520bdg-red%2522%253E20%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-tiny%2520bdg-red%2522%253E15%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1011px; height: 293px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Buttons</h3>
+                <p class="title-caption">Buttons are also called as call to action. These are used to manipulate something on the pages</p>
+                <h4 class="component-subheading">Examples of Buttons</h4>
+                <p>There are two kinds of buttons: primary and secondary. Both can be added with or without icons. Use the button element with appropriate classes and the buttons will be styled.</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <button class = "primary-btn">This is a Primary Button</button>
+                    <button class = "secondary-btn">This is a Secondary Button</button>
+                    <button class = "primary-btn"> <span class="material-icons">dashboard</span> This is a Primary Button with an icon</button>
+                    <button class = "secondary-btn"> This is a Secondary Button with an icon<span class="material-icons">thumb_up</span></button>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253EThis%2520is%2520a%2520Primary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253EThis%2520is%2520a%2520Secondary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253E%2520%253Cspan%2520class%253D%2522material-icons%2522%253Edashboard%253C%252Fspan%253E%2520This%2520is%2520a%2520Primary%2520Button%2520with%2520an%2520icon%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253E%2520This%2520is%2520a%2520Secondary%2520Button%2520with%2520an%2520icon%253Cspan%2520class%253D%2522material-icons%2522%253Ethumb_up%253C%252Fspan%253E%253C%252Fbutton%253E"
+                        style="width: 1089px; height: 181px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
             </article>
         </section>
     </div>

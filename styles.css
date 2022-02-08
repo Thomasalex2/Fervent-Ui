@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import "resources/fervent-ui/fervent-ui.css";
 
 :root {
@@ -118,7 +118,12 @@ body {
 }
 
 .drawer {
+    overflow: auto;
     grid-area: sidebar;
+}
+
+.resource-links {
+    display: flex;
 }
 
 section {
@@ -126,9 +131,32 @@ section {
     margin: 2rem;
 }
 
+.title-caption {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
 
-.example-container * {
-    margin: 1rem;
+.component-subheading {
+    margin: 0.25rem auto;
+}
+
+.example-container-col {
+    display:flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.example-container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.ex-heading {
+    margin: 0.5rem;
 }
 
 .example-script {
