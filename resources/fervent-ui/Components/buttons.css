@@ -3,6 +3,9 @@
 }
 
 .primary-btn {
+    display:flex;
+    align-items: center;
+    gap: 10px;
     border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
     color: var(--white-text-color);
@@ -16,6 +19,9 @@
 }
 
 .secondary-btn {
+    display:flex;
+    align-items: center;
+    gap: 10px;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     padding: 0.5rem 1rem;

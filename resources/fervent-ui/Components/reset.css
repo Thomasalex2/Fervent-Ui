@@ -3,7 +3,6 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
-    width: 10rem;
 }
 
 a {
@@ -20,8 +19,4 @@ a:visited {
 
 a:hover {
     opacity: 0.8;
-}
-
-* {
-    padding-inline-start: 0px;
 }

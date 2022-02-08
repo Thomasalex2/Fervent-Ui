@@ -2,8 +2,7 @@
     position: fixed;
     display: flex;
     border-radius: 5px;
-    background-color: var(--accent-color);
-    width: 400px;
+    background-color: #1e1e1e;
     gap: 10px;
     align-items: center;
     z-index: 9999;
@@ -12,7 +11,7 @@
 }
 
 .snackbar-msg {
-    color: var(--text-color);
+    color: var(--white-text-color);
     padding-right: 10px;
     padding-left: 10px;
     font-size: 0.9rem;
@@ -27,12 +26,13 @@
 
 .snackbar-btn-container button {
     padding: 0.5rem 1rem;
-    /* margin: 0.5rem; */
     border-radius: 3px;
 }
 
 .snackbar-primary-btn {
     color: gold;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .snackbar-primary-btn:hover {
@@ -45,7 +45,7 @@
 
 .snackbar-close-btn {
     font-size: 0.5rem;
-    color: var(--text-color);
+    color: var(--white-text-color);
 }
 
 .snackbar-close-btn:hover {
@@ -55,4 +55,8 @@
 
 .snackbar-close-btn:active {
     color: rgb(187, 187, 184);
+}
+
+.remove-snackbar-fixed {
+    position: static;
 }
