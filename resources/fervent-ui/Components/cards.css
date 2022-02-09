@@ -16,11 +16,16 @@
     flex-direction: column;
 }
 
-.card-header h3 {
+.card-header h4 {
     font-weight: bold;
     margin: 0.5rem 1rem;
     margin-bottom:0.1rem;
 }
+
+.card-header-title-white {
+    color: var(--white-text-color);
+}
+
 
 .card-header img {
     width: 100%;
@@ -66,7 +71,7 @@
 /* Basic Card Style with title over image */
 
 .text-over-media img {
-    margin-bottom: -3.75rem;
+    margin-bottom: -4rem;
 }
 
 .text-over-media div h3 {

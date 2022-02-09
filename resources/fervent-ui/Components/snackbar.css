@@ -56,7 +56,3 @@
 .snackbar-close-btn:active {
     color: rgb(187, 187, 184);
 }
-
-.remove-snackbar-fixed {
-    position: static;
-}
