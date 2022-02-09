@@ -4,6 +4,10 @@ form {
     grid-row-gap: 10px;
 }
 
+form label {
+    font-size: 0.9rem;
+}
+
 .required {
     color: red;
 }

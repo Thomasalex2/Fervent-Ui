@@ -3,7 +3,6 @@
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    overflow: auto;
 }
 
 .drawer h3 {
