@@ -23,6 +23,8 @@
             </div>
         </nav>
 
+        <button class = "floating-btn"><span class="material-icons">arrow_upward</span></button>
+
         <div class="drawer">
             <h4 class="component-subheading">Components</h4>
             <div class="drawer-btns-container">
@@ -33,7 +35,7 @@
                 <a>Buttons</a>
                 <a>Cards</a>
                 <a>Images</a>
-                <a>Input</a>
+                <a>Forms</a>
                 <a>Toasts</a>
                 <a>Sliders</a>
                 <a>Ratings</a>
@@ -129,20 +131,20 @@
                 <h4 class="component-subheading">Examples of Alerts</h4>
                 <p>Snackbar comes with a message section and button section. Messages and buttons can be customized as needed</p>
                 <div class="example-container-row border-medium border-rad-M">
-                    <div class="snackbar remove-snackbar-fixed">
+                    <div class="snackbar remove-fixed-pos">
                         <p class="snackbar-msg">This is a test alert message with accept and deny button</p>
                         <div class="snackbar-btn-container">
                             <button class="snackbar-primary-btn">ACCEPT</button>
                             <button class="snackbar-primary-btn">DENY</button>
                         </div>
                     </div>
-                    <div class="snackbar remove-snackbar-fixed">
+                    <div class="snackbar remove-fixed-pos">
                         <p class="snackbar-msg">This is a test alert message with retry option</p>
                         <div class="snackbar-btn-container">
                             <button class="snackbar-primary-btn">RETRY</button>
                         </div>
                     </div>
-                    <div class="snackbar remove-snackbar-fixed">
+                    <div class="snackbar remove-fixed-pos">
                         <p class="snackbar-msg">This is a test alert message with close button</p>
                         <div class="snackbar-btn-container">
                             <button class="snackbar-close-btn"><span class="material-icons">close</span></button>
@@ -194,21 +196,278 @@
                 <h3>Buttons</h3>
                 <p class="title-caption">Buttons are also called as call to action. These are used to manipulate something on the pages</p>
                 <h4 class="component-subheading">Examples of Buttons</h4>
-                <p>There are two kinds of buttons: primary and secondary. Both can be added with or without icons. Use the button element with appropriate classes and the buttons will be styled.</p>
-                <div class="example-container-row border-medium border-rad-M">
+                <p>There are three kinds of buttons: primary, secondary and links. They can be with or without icons. Use the button or link element with appropriate classes and the buttons will be styled. Floating action buttons are available as well, where their position will be fixed in the right bottom corner of the screen for easy access functions</p>
+                <div class="example-container-col border-medium border-rad-M">
                     <button class = "primary-btn">This is a Primary Button</button>
                     <button class = "secondary-btn">This is a Secondary Button</button>
                     <button class = "primary-btn"> <span class="material-icons">dashboard</span> This is a Primary Button with an icon</button>
                     <button class = "secondary-btn"> This is a Secondary Button with an icon<span class="material-icons">thumb_up</span></button>
+                    <button class = "secondary-btn"><span class="material-icons">shopping_cart</span></button>
+                    <a>Link Button</a>
+                    <button class = "floating-btn remove-fixed-pos"><span class="material-icons">arrow_upward</span></button>
                 </div>
                 <div class="example-script">
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253EThis%2520is%2520a%2520Primary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253EThis%2520is%2520a%2520Secondary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253E%2520%253Cspan%2520class%253D%2522material-icons%2522%253Edashboard%253C%252Fspan%253E%2520This%2520is%2520a%2520Primary%2520Button%2520with%2520an%2520icon%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253E%2520This%2520is%2520a%2520Secondary%2520Button%2520with%2520an%2520icon%253Cspan%2520class%253D%2522material-icons%2522%253Ethumb_up%253C%252Fspan%253E%253C%252Fbutton%253E"
-                        style="width: 1089px; height: 181px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253EThis%2520is%2520a%2520Primary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253EThis%2520is%2520a%2520Secondary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522primary-btn%2522%253E%2520%253Cspan%2520class%253D%2522material-icons%2522%253Edashboard%253C%252Fspan%253E%2520This%2520is%2520a%2520Primary%2520Button%2520with%2520an%2520icon%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253E%2520This%2520is%2520a%2520Secondary%2520Button%2520with%2520an%2520icon%253Cspan%2520class%253D%2522material-icons%2522%253Ethumb_up%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%2520%253D%2520%2522secondary-btn%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253Ca%253ELink%2520Button%253C%252Fa%253E%250A%253Cbutton%2520class%2520%253D%2520%2522floating-btn%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Earrow_upward%253C%252Fspan%253E%253C%252Fbutton%253E"
+                        style="width: 1131px; height: 199px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
             </article>
+
+            <hr>
+
+            <article>
+                <h3>Cards</h3>
+                <p class="title-caption">Card are used to show user related data collectively, like product details.</p>
+                <h4 class="component-subheading">Examples of Cards</h4>
+                <p>There are few different kinds of cards with different elements placement based on the user's preference</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div>
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div>
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns remove-element">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div class="above-media">
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div>
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons remove-element">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div class="text-over-media">
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4 class="card-header-title-white">Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-layout">
+                        <div class="card-header">
+                            <div class="horizontal">
+                                <img src="resources/images/card-img.jpg">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is a very cute labrador puppy.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2520remove-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522above-media%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="width: 1011px; height: 1331px; border:0; transform: scale(1); overflow:auto;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            <hr>
+
+            <article>
+                <h3>Images</h3>
+                <p class="title-caption">Images can be responsive to fit the parent's width, and also can be customised to be round shaped</p>
+                <h4 class="component-subheading">Examples of Responsive Images</h4>
+                <p>You can add class fill-img to make your image fill the width of container. It's width and height will get adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to crop the image.</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <img class="fill-img" loading="lazy" src="resources/images/responsive-img.jpg">
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522fill-img%2522%2520src%253D%2522resources%252Fimages%252Fresponsive-img.jpg%2522%253E"
+                        style="width: 1011px; height: 88px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h4 class="component-subheading">Examples of Round Images</h4>
+                <p>You can add class round-img to make your image cropped roung.</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <img class="round-img" loading="lazy" src="resources/images/responsive-img.jpg">
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522round-img%2522%2520src%253D%2522resources%252Fimages%252Fresponsive-img.jpg%2522%253E"
+                        style="width: 1011px; height: 88px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Form Components</h3>
+                <p class="title-caption">There are form fields listed below and form validation is also styled</p>
+                <h4 class="component-subheading">Examples of Form Elements</h4>
+                <p>Form elements include questions, input fields, drop down lists, radio buttons, checkboxes, buttons, etc.</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <form>
+                        <h4>Please fill in your details</h4>
+                        <label for="fname">First name <span class="required">*</span></label>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name <span class="required">*</span></label>
+                        <input type="text" id="lname" name="lname"><br>
+                        <label for="email">Email ID <span class="required">*</span></label>
+                        <input type="text" id="email" name="email" placeholder="name@example.com"><br>
+                        <label for="dob">Password</label>
+                        <input type="password" id="password" name="password"><br>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob"><br>
+                        <label for="country">Country of Origin</label>
+                        <select id="country" name="country">
+                            <option value="india">India</option>
+                            <option value="United States">United States</option>
+                            <option value="Cananda">Cananda</option>
+                            <option value="China">China</option>
+                        </select><br>
+                        <div class="radio-btn">
+                        <label for="payment">Please select your payment method</label><br>
+                            <input type="radio" id="credit/debit" name="payment_method" value="credit/debit">
+                            <label for="credit/debit">Credit/Debit Card</label><br>
+                            <input type="radio" id="upi" name="payment_method" value="upi">
+                            <label for="css">UPI</label><br>
+                            <input type="radio" id="netbanking" name="payment_method" value="netbanking">
+                            <label for="netbanking">NetBanking</label><br><br>
+                        </div>
+                        <label for="dob">Employee Code</label>
+                        <input type="text" id="employee_code" name="employee_code" placeholder="disabled input" disabled><br>
+                        <label for="dob">Special Requests</label>
+                        <textarea name="message" rows="10" cols="30" placeholder="Write down here if you want to make any special requests"></textarea>
+                        <div class="checkbox-btn">
+                            <input type="checkbox" id="terms" name="terms" value="terms">
+                            <label for="vehicle1">I agree to terms and service <span class="required">*</span></label><br>
+                        </div>
+                        <div class="form-btn-container">
+                            <button class="primary-btn">Proceed to Checkout</button>
+                            <button class="secondary-btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%253E%250A%2520%2520%2520%2520%253Ch4%253EPlease%2520fill%2520in%2520your%2520details%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522fname%2522%253EFirst%2520name%2520%253Cspan%2520class%253D%2522required%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522fname%2522%2520name%253D%2522fname%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522lname%2522%253ELast%2520name%2520%253Cspan%2520class%253D%2522required%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522lname%2522%2520name%253D%2522lname%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520ID%2520%253Cspan%2520class%253D%2522required%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522email%2522%2520name%253D%2522email%2522%2520placeholder%253D%2522name%2540example.com%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522dob%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520id%253D%2522password%2522%2520name%253D%2522password%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522dob%2522%253EDate%2520of%2520Birth%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522date%2522%2520id%253D%2522dob%2522%2520name%253D%2522dob%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522country%2522%253ECountry%2520of%2520Origin%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cselect%2520id%253D%2522country%2522%2520name%253D%2522country%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522india%2522%253EIndia%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522United%2520States%2522%253EUnited%2520States%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Cananda%2522%253ECananda%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522China%2522%253EChina%253C%252Foption%253E%250A%2520%2520%2520%2520%253C%252Fselect%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio-btn%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522payment%2522%253EPlease%2520select%2520your%2520payment%2520method%253C%252Flabel%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522credit%252Fdebit%2522%2520name%253D%2522payment_method%2522%2520value%253D%2522credit%252Fdebit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522credit%252Fdebit%2522%253ECredit%252FDebit%2520Card%253C%252Flabel%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522upi%2522%2520name%253D%2522payment_method%2522%2520value%253D%2522upi%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522css%2522%253EUPI%253C%252Flabel%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522netbanking%2522%2520name%253D%2522payment_method%2522%2520value%253D%2522netbanking%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522netbanking%2522%253ENetBanking%253C%252Flabel%253E%253Cbr%253E%253Cbr%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522dob%2522%253EEmployee%2520Code%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522employee_code%2522%2520name%253D%2522employee_code%2522%2520placeholder%253D%2522disabled%2520input%2522%2520disabled%253E%253Cbr%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522dob%2522%253ESpecial%2520Requests%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Ctextarea%2520name%253D%2522message%2522%2520rows%253D%252210%2522%2520cols%253D%252230%2522%2520placeholder%253D%2522Write%2520down%2520here%2520if%2520you%2520want%2520to%2520make%2520any%2520special%2520requests%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522terms%2522%2520name%253D%2522terms%2522%2520value%253D%2522terms%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522vehicle1%2522%253EI%2520agree%2520to%2520terms%2520and%2520service%2520%253Cspan%2520class%253D%2522required%2522%253E*%253C%252Fspan%253E%253C%252Flabel%253E%253Cbr%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-btn%2522%253EProceed%2520to%2520Checkout%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522secondary-btn%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                        style="width: 1131px; height: 851px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
         </section>
     </div>
 </body>

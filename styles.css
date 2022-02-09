@@ -144,7 +144,8 @@ section {
 
 .example-container-col {
     display:flex;
-    align-items: baseline;
+    flex-flow: row wrap;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -168,4 +169,10 @@ section {
     overflow: auto;
     width: auto;
     border:0;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.remove-fixed-pos {
+    position: static;
 }
