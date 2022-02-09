@@ -10,7 +10,7 @@
       rel="stylesheet">
 </head>
 <body>
-    <div class="docs-grid-layout">
+    <div id="top-section" class="docs-grid-layout">
         <nav class="nav-bar">
             <h1 class="main-title">Fervent UI</h1>
             <div class="nav-links">
@@ -23,27 +23,27 @@
             </div>
         </nav>
 
-        <button class = "floating-btn"><span class="material-icons">arrow_upward</span></button>
+        <button id="top-btn" class="floating-btn"><span class="material-icons">arrow_upward</span></button>
 
         <div class="drawer">
-            <h4 class="component-subheading">Components</h4>
             <div class="drawer-btns-container">
-                <a>Typography</a>
-                <a>Avatar</a>
-                <a>Alerts</a>
-                <a>Badges</a>
-                <a>Buttons</a>
-                <a>Cards</a>
-                <a>Images</a>
-                <a>Forms</a>
-                <a>Toasts</a>
-                <a>Sliders</a>
-                <a>Ratings</a>
+                <h4 class="component-subheading">Components</h4>
+                <a id="typography-lnk">Typography</a>
+                <a id="avatar-lnk">Avatar</a>
+                <a id="alerts-lnk">Alerts</a>
+                <a id="badges-lnk">Badges</a>
+                <a id="buttons-lnk">Buttons</a>
+                <a id="cards-lnk">Cards</a>
+                <a id="images-lnk">Images</a>
+                <a id="forms-lnk">Forms</a>
+                <a id="toasts-lnk">Toasts</a>
+                <a id="sliders-lnk">Sliders</a>
+                <a id="ratings-lnk">Ratings</a>
             </div>
         </div>
 
         <section class="content">
-            <article>
+            <article id="typography-section">
                 <h3>Typography</h3>
                 <p class="title-caption">Check out the below text Utilities</p>
                 <h4 class="component-subheading">Examples of Heading Texts</h4>
@@ -68,7 +68,7 @@
 
             <hr>
 
-            <article>
+            <article id="avatar-section">
                 <h3>Avatar</h3>
                 <p class="title-caption">Avatar can be used to show user's profile picture on profile information page, on navigation bar, in blogs grid items.</p>
                 <h4>Examples of Avatar</h4>
@@ -125,7 +125,7 @@
 
             <hr>
 
-            <article>
+            <article id="alerts-section">
                 <h3>Alerts</h3>
                 <p class="title-caption">Alerts are used to attract user's attention for important information without interrupting the user's flow.</p>
                 <h4 class="component-subheading">Examples of Alerts</h4>
@@ -162,7 +162,7 @@
 
             <hr>
 
-            <article>
+            <article id="badges-section">
                 <h3>Badges</h3>
                 <p class="title-caption">Badges are being used to display a notification count or status information</p>
                 <h4 class="component-subheading">Examples of Badges</h4>
@@ -192,7 +192,7 @@
 
             <hr>
 
-            <article>
+            <article id="buttons-section">
                 <h3>Buttons</h3>
                 <p class="title-caption">Buttons are also called as call to action. These are used to manipulate something on the pages</p>
                 <h4 class="component-subheading">Examples of Buttons</h4>
@@ -217,7 +217,7 @@
 
             <hr>
 
-            <article>
+            <article id="cards-section">
                 <h3>Cards</h3>
                 <p class="title-caption">Card are used to show user related data collectively, like product details.</p>
                 <h4 class="component-subheading">Examples of Cards</h4>
@@ -379,7 +379,7 @@
 
             <hr>
 
-            <article>
+            <article id="images-section">
                 <h3>Images</h3>
                 <p class="title-caption">Images can be responsive to fit the parent's width, and also can be customised to be round shaped</p>
                 <h4 class="component-subheading">Examples of Responsive Images</h4>
@@ -411,7 +411,7 @@
 
             <hr>
 
-            <article>
+            <article id="forms-section">
                 <h3>Form Components</h3>
                 <p class="title-caption">There are form fields listed below and form validation is also styled</p>
                 <h4 class="component-subheading">Examples of Form Elements</h4>
@@ -470,5 +470,6 @@
 
         </section>
     </div>
+    <script src="scripts/docs.js" type="text/javascript"></script>
 </body>
 </html>

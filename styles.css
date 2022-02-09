@@ -110,7 +110,7 @@ body {
     "sidebar main main main"
     "sidebar main main main"
     "footer footer footer footer";
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr 1fr 1fr;
 }
 
 .nav-bar {
@@ -118,8 +118,12 @@ body {
 }
 
 .drawer {
-    overflow: auto;
     grid-area: sidebar;
+}
+
+.drawer-btns-container {
+    position: sticky;
+    top: 20px;
 }
 
 .resource-links {
@@ -139,7 +143,7 @@ section {
 }
 
 .component-subheading {
-    margin: 0.25rem auto;
+    margin: 0.25rem 0.5rem;
 }
 
 .example-container-col {
