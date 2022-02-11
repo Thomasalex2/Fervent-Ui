@@ -55,8 +55,8 @@ textarea {
     display:block;
     min-width: 50%;
     max-width: 100%;
-    min-height: 50px;
-    max-height: 100px;
+    min-height: 3.5rem;
+    max-height: 6.5rem;
     outline: none;
     background-color: var(--background-color);
     border: 2px solid lightgrey;

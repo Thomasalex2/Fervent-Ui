@@ -6,9 +6,9 @@
     --off-white-bg-color: #fff7ed;
     --primary-color: #fb923c;
     --secondary-color: #42919E;
-    --black-text-color: black;
-    --white-text-color: white;
-    --border-color: black;
+    --black-text-color: #000000;
+    --white-text-color: #FFFFFF;
+    --border-color: #000000;
 }
 
 body {
