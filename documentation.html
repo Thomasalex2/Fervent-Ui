@@ -224,31 +224,34 @@
                 <p>There are few different kinds of cards with different elements placement based on the user's preference</p>
                 <div class="example-container-col border-medium border-rad-M">
                     
-                    <div class="card-layout">
-                        <div class="card-header">
-                            <div>
-                                <img src="resources/images/card-img.jpg">
+                    <div class="card-layout layout-vertical">
+                        <div class="badge-container">
+                            <div class="card-header">
                                 <div>
-                                    <h4>Example Card Layout</h4>
-                                    <small>by Thomas Alex</small>
+                                    <img src="resources/images/card-img.jpg">
+                                    <div>
+                                        <h4>Example Card Layout</h4>
+                                        <small>by Thomas Alex</small>
+                                        <span class="badge bdg-med bdg-orange">FEATURED</span>
+                                    </div>
                                 </div>
+                                <p> This is a very cute labrador puppy.</p>
                             </div>
-                            <p> This is a very cute labrador puppy.</p>
-                        </div>
-                        <div class= "card-clickables">
-                            <div class="card-btns">
-                                <button>Read</button>
-                                <button>Bookmark</button>
-                            </div>
-                            <div class="card-icons">
-                                <button><span class="material-icons">favorite_border</span></button>
-                                <button><span class="material-icons">share</span></button>
-                                <button><span class="material-icons">more_vert</span></button>
+                            <div class= "card-clickables">
+                                <div class="card-btns">
+                                    <button>Read</button>
+                                    <button>Dismiss</button>
+                                </div>
+                                <div class="card-icons">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                    <button><span class="material-icons">share</span></button>
+                                    <button><span class="material-icons">more_vert</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-layout">
+                    <div class="card-layout layout-vertical">
                         <div class="card-header">
                             <div>
                                 <img src="resources/images/card-img.jpg">
@@ -272,7 +275,7 @@
                         </div>
                     </div>
 
-                    <div class="card-layout">
+                    <div class="card-layout layout-vertical">
                         <div class="card-header">
                             <div class="above-media">
                                 <img src="resources/images/card-img.jpg">
@@ -296,7 +299,7 @@
                         </div>
                     </div>
 
-                    <div class="card-layout">
+                    <div class="card-layout layout-vertical">
                         <div class="card-header">
                             <div>
                                 <img src="resources/images/card-img.jpg">
@@ -320,7 +323,7 @@
                         </div>
                     </div>
 
-                    <div class="card-layout">
+                    <div class="card-layout layout-vertical">
                         <div class="card-header">
                             <div class="text-over-media">
                                 <img src="resources/images/card-img.jpg">
@@ -344,7 +347,7 @@
                         </div>
                     </div>
 
-                    <div class="card-layout">
+                    <div class="card-layout layout-vertical">
                         <div class="card-header">
                             <div class="horizontal">
                                 <img src="resources/images/card-img.jpg">
@@ -367,14 +370,55 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card-layout layout-vertical">
+                        <div class="card-header">
+                            <div class="horizontal">
+                                <div>
+                                    <h4>Example Card Layout</h4>
+                                    <small>by Thomas Alex</small>
+                                </div>
+                            </div>
+                            <p> This is an example of text only card.</p>
+                        </div>
+                        <div class= "card-clickables">
+                            <div class="card-btns">
+                                <button>Read</button>
+                                <button>Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card-layout layout-horizontal">
+                        <div class="card-header">
+                            <img src="resources/images/card-img.jpg">
+                        </div>
+                        <div>
+                            <h4>Example Card Layout</h4>
+                            <small>by Thomas Alex</small>
+                            <p> This is an example of text only card.</p>
+                            <div class= "card-clickables">
+                                <div class="card-btns">
+                                    <button>Read</button>
+                                    <button>Bookmark</button>
+                                </div>
+                            <div class="card-icons">
+                                <button><span class="material-icons">favorite_border</span></button>
+                                <button><span class="material-icons">share</span></button>
+                                <button><span class="material-icons">more_vert</span></button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="example-script">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1011&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2520remove-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522above-media%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
-                        style="width: 1011px; height: 1331px; border:0; transform: scale(1); overflow:auto;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-layout%2520layout-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520bdg-med%2520bdg-orange%2522%253EFEATURED%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2520layout-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EExample%2520Card%2520Layout%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eby%2520Thomas%2520Alex%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520is%2520a%2520very%2520cute%2520labrador%2520puppy.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2520%2522card-clickables%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-btns%2520remove-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Efavorite_border%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshare%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emore_vert%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-layout%2520layout-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522above-media%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522resources%252Fimages%252Fcard-img.jpg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 1131px; height: 3567px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
                 </div>
 
             <hr>
@@ -493,6 +537,27 @@
                         style="width: 1131px; height: 293px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
+                </div>
+            </article>
+
+
+            <article id="sliders-section">
+                <h3>Sliders</h3>
+                <p class="title-caption">Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.</p>
+                <h4 class="component-subheading">Examples of Slider</h4>
+                <p>Below is an example of a styled slider</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <p>Slider without icon</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange1">
+                    </div>
+                    <p>Slider with icon</p>
+                    <div class="slider-container">
+                        <span class="material-icons">volume_up</span>
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange2">
+                    </div>
+                </div>
+                <div class="example-script">
                 </div>
             </article>
 
