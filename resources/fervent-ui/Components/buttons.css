@@ -41,13 +41,14 @@
     color: var(--white-text-color);
 }
 
-.primary-btn:hover,
-.floating-btn:hover {
-    filter: brightness(95%);
+button:hover {
+    filter: brightness(90%);
+    transition: filter 0.2s;
 }
 
 .secondary-btn:hover {
     background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     color: var(--white-text-color);
+    transition: 0.1s;
 }

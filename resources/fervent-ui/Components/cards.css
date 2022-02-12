@@ -1,19 +1,26 @@
-.cards-container {
-    display:flex;
-    flex-flow: row wrap;
-    background-color:var(--secondary-color);
-    padding: 2rem;
-    gap: 2rem;
-    align-items: center;
-}
-
 .card-layout {
-    max-width: 20rem;
     min-height: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex;
+}
+
+.layout-vertical {
     flex-direction: column;
+    max-width: 20rem;
+}
+
+.layout-horizontal {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-layout:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 4px;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .card-header h4 {
@@ -103,6 +110,11 @@
 .horizontal {
     display: flex;
     flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
 }
 
 .horizontal img {
