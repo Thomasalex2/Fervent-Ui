@@ -2,6 +2,11 @@ form {
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-row-gap: 10px;
+    background-color: white;
+    padding: 2rem;
+    padding-top: 0.25rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 form label {

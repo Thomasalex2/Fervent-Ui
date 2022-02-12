@@ -8,6 +8,7 @@
     z-index: 9999;
     bottom: 20px;
     left: 20px;
+    padding: 0.1rem 0.5em;
 }
 
 .snackbar-msg {
@@ -55,4 +56,20 @@
 
 .snackbar-close-btn:active {
     color: rgb(187, 187, 184);
+}
+
+.success-toast {
+    border-bottom: 5px solid green;
+}
+
+.failed-toast {
+    border-bottom: 5px solid red
+}
+
+.processing-toast {
+    border-bottom: 5px solid orange
+}
+
+.info-toast {
+    border-bottom: 5px solid skyblue
 }
