@@ -12,7 +12,7 @@ const toasts_lnk = document.querySelector("#toasts-lnk");
 const sliders_lnk = document.querySelector("#sliders-lnk");
 const ratings_lnk = document.querySelector("#ratings-lnk");
 
-const scrollTo = (param) => window.scrollTo({ top: document.querySelector(`#${param.srcElement.id.split("-")[0]}-section`).offsetTop, behavior: 'smooth' });
+const scrollTo = (event) => window.scrollTo({ top: document.querySelector(`#${event.currentTarget.id.split("-")[0]}-section`).offsetTop, behavior: 'smooth' });
 
 link_array = [top_btn, typography_lnk, avatar_lnk, alerts_lnk, badges_lnk, buttons_lnk, cards_lnk, image_lnk, forms_lnk, toasts_lnk, sliders_lnk, ratings_lnk];
 link_array.forEach(element => element.addEventListener("click", scrollTo));
