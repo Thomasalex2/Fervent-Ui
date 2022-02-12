@@ -41,27 +41,3 @@
     height: 25px;
     border: 2px solid var(--primary-color);
 }
-
-.image-container {
-    position: relative;
-}
-
-.avatar-bdg {
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    display: inline-block;
-    position:absolute;
-    bottom:5px;
-    right:10px;
-}
-
-.bdg-red {
-    color:red;
-    background-color:red;
-}
-
-.bdg-green {
-    color: green;
-    background-color: green;
-}

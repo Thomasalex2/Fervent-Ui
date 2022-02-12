@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import "resources/fervent-ui/fervent-ui.css";
 
 :root {
@@ -6,8 +6,9 @@
     --off-white-bg-color: #fff7ed;
     --primary-color: #fb923c;
     --secondary-color: #42919E;
-    --black-text-color: black;
-    --white-text-color: white;
+    --black-text-color: #000000;
+    --white-text-color: #FFFFFF;
+    --border-color: #000000;
 }
 
 body {
@@ -21,12 +22,9 @@ body {
     flex-direction: row;
     align-items: center;
     margin: -0.5rem;
-    /* margin-bottom: 1rem; */
-    background-color: var(--off-white-bg-color);
-    color: var(--black-text-color);
+    background-color: var(--primary-color);
+    color: var(--off-white-bg-color);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-bottom-left-radius:20%;
-    border-bottom-right-radius:20%;
 }
 
 .main-title {
@@ -46,13 +44,10 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    /* gap: 1rem; */
-    background-color:var(--primary-color);
-    color: var(--white-text-color);
     margin-top: -1rem;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-    height: 75vh;
+    height: 70vh;
 }
 
 .hero-section * {
@@ -65,13 +60,11 @@ body {
 
 .hero-section h1 {
     max-width:50rem;
-    font-size: 4rem;
 }
 
-.hero-section h2 {
+.hero-section h4 {
     margin-top:-1rem;
     max-width: 40rem;
-    font-size: 1.25rem;
 }
 
 .hero-section p {
@@ -109,36 +102,81 @@ body {
     overflow:hidden;
 }
 
+.docs-grid-layout {
+    display:grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+    grid-template-columns: 0.75fr 1fr 1fr 1fr;
+}
 
-footer {
+.nav-bar {
+    grid-area: header;
+}
+
+.drawer {
+    grid-area: sidebar;
+}
+
+.drawer-btns-container {
+    position: sticky;
+    top: 30px;
+}
+
+.resource-links {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+}
+
+section {
+    grid-area: main;
+    margin: 2rem;
+}
+
+.title-caption {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.component-subheading {
+    margin: 0.25rem 0.5rem;
+}
+
+.example-container-col {
+    display:flex;
+    flex-flow: row wrap;
     align-items: center;
-    margin-top: 1rem;
+    gap: 1rem;
 }
 
-footer * {
-    padding: 0.25rem auto;
-    margin: 0.25rem auto;
-}
-
-.social-icons-container {
+.example-container-row {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
-.social-icons-container ul {
-    padding-inline-start: 0px;
+.ex-heading {
+    margin: 0.5rem;
 }
 
-.social-icons-container ul li {
-    list-style: none;
-    display: inline;
-    padding: 0.5rem 0.75rem;
+.example-script {
+    text-align: center;
 }
 
-.social-icons {
-    width: 30px;
+.example-script iframe {
+    margin: 2rem;
+    overflow: auto;
+    width: auto;
+    border:0;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.remove-fixed-pos {
+    position: static;
 }

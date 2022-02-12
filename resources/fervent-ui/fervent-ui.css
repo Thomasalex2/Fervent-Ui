@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "Components/snackbar.css";
 @import "Components/tab.css";
 @import "Components/dialogue.css";
@@ -10,3 +11,9 @@
 @import "Components/chips.css";
 @import "Components/cards.css";
 @import "Components/buttons.css";
+@import "Components/footer.css";
+@import "Components/styling.css";
+@import "Components/typography.css";
+@import "Components/images.css";
+@import "Components/forms.css";
+@import "Components/sliders.css";

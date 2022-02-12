@@ -3,13 +3,21 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
-    width: 10rem;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:active {
-    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
 }
