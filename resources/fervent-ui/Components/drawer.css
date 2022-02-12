@@ -1,8 +1,9 @@
 .drawer {
-    margin-top:2rem;
+    padding-top:2rem;
     display: flex;
     flex-flow: column;
     max-width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 5px 5px;
 }
 
 .drawer h3 {
