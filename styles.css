@@ -4,6 +4,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     --off-white-bg-color: #fff7ed;
+    --grey-bg-color: #fafafa;
     --primary-color: #fb923c;
     --secondary-color: #42919E;
     --black-text-color: #000000;
@@ -16,27 +17,12 @@ body {
 }
 
 .nav-bar {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: -0.5rem;
-    background-color: var(--primary-color);
-    color: var(--off-white-bg-color);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
 }
 
 .main-title {
     padding: 0.5rem 1rem 0.75rem 1rem;
     font-size: 1.5rem;
-}
-
-.nav-links ul li {
-    list-style: none;
-    display: inline;
-    padding: 0.5rem 0.75rem;
-    text-align: right;
 }
 
 .hero-section {
@@ -126,10 +112,6 @@ body {
     top: 30px;
 }
 
-.resource-links {
-    display: flex;
-}
-
 section {
     grid-area: main;
     margin: 2rem;
@@ -138,12 +120,12 @@ section {
 .title-caption {
     font-weight: 400;
     font-size: 1.25rem;
-    margin-top: -1rem;
+    margin-top: 0.1rem;
     margin-bottom: 1.5rem;
 }
 
 .component-subheading {
-    margin: 0.25rem 0.5rem;
+    margin: 0.25rem 0rem;
 }
 
 .example-container-col {
@@ -160,7 +142,7 @@ section {
     gap: 0.5rem;
 }
 
-.ex-heading {
+.typography-example {
     margin: 0.5rem;
 }
 

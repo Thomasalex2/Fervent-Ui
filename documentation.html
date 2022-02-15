@@ -38,6 +38,10 @@
                 <a id="forms-lnk">Forms</a>
                 <a id="toasts-lnk">Toasts</a>
                 <a id="sliders-lnk">Sliders</a>
+                <a id="modals-lnk">Modals</a>
+                <a id="lists-lnk">Lists</a>
+                <a id="navigation-lnk">Navigation</a>
+                <a id="grids-lnk">Grids</a>
                 <a id="ratings-lnk">Ratings</a>
             </div>
         </div>
@@ -50,12 +54,15 @@
                 <p>For heading u can use h1, h2, h3, h4, h5, h6 elements</p>
                 <p>The same font-styling is present for class names h1, h2, h3, h4, h5, h6 class. You can add one of these classes to style the text.</p>
                 <div class="example-container-row border-medium border-rad-M">
-                    <h1 class="ex-heading"> H1 - Heading 1</h1>
-                    <h2 class="ex-heading"> H2 - Heading 2</h2>
-                    <h3 class="ex-heading"> H3 - Heading 3</h3>
-                    <h4 class="ex-heading"> H4 - Heading 4</h4>
-                    <h5 class="ex-heading"> H5 - Heading 5</h5>
-                    <h6 class="ex-heading"> H6 - Heading 6</h6>
+                    <h1 class="typography-example"> H1 - Heading 1</h1>
+                    <h2 class="typography-example"> H2 - Heading 2</h2>
+                    <h3 class="typography-example"> H3 - Heading 3</h3>
+                    <h4 class="typography-example"> H4 - Heading 4</h4>
+                    <h5 class="typography-example"> H5 - Heading 5</h5>
+                    <h6 class="typography-example"> H6 - Heading 6</h6>
+                    <p class="typography-example">This is an example of paragraph text</p>
+                    <p class="greyed-out typography-example">This is an example of greyed out text</p>
+                    <small class="typography-example">This is an example of small text</small>
                 </div>
                 <div class="example-script">
                     <iframe
@@ -397,7 +404,7 @@
                         <div>
                             <h4>Example Card Layout</h4>
                             <small>by Thomas Alex</small>
-                            <p> This is an example of text only card.</p>
+                            <p> This is an example of a horizontal card.</p>
                             <div class= "card-clickables">
                                 <div class="card-btns">
                                     <button>Read</button>
@@ -558,6 +565,255 @@
                     </div>
                 </div>
                 <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252250%2522%2520class%253D%2522slider%2522%2520id%253D%2522myRange1%2522%253E%250A%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Evolume_up%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520value%253D%252250%2522%2520class%253D%2522slider%2522%2520id%253D%2522myRange2%2522%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1131px; height: 237px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+
+            <article id="modals-section">
+                <h3>Modals</h3>
+                <p class="title-caption">Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
+                <h4 class="component-subheading">Example of Modal</h4>
+                <p>Click the button below for a modal to pop up on the page</p>
+                <button class="primary-btn" id="show-modal-btn">Show Modal</button>
+                <div class="modal" id="modal-element">
+                    <button class="close" id="close-modal-btn"><span class="material-icons">close</span></button>
+                    <div class="modal-main-content">
+                        <h4>Check out some new and Exciting Offers from the Winter Sale currently going on!</h4>
+                        <p>Check out some exclusive new designs and collection on our Winter sale page</p>
+                        <div class="btn-container">
+                            <button class="primary-btn">Shop now</button>
+                            <button class="secondary-btn">Go back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-script">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=auto&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal-main-content%2522%253E%250A%2520%2520%2520%2520%253Ch4%253ECheck%2520out%2520some%2520new%2520and%2520Exciting%2520Offers%21%253C%252Fh4%253E%250A%2520%2520%2520%2520%253Cp%253ECheck%2520out%2520some%2520exclusive%2520new%2520designs%2520and%2520collection%2520on%2520our%2520Winter%2520sale%2520page%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-btn%2522%253EShop%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522secondary-btn%2522%253EGo%2520back%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1131px; height: 218px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                </div>
+            </article>
+
+
+            <article id="lists-section">
+                <h3>Lists</h3>
+                <p class="title-caption">Lists can be used at many places where there is a need of presenting data in an organized form</p>
+                <h4 class="component-subheading">Example of Lists</h4>
+                <p>Below are many examples or numbered, bulleted, and reverse lists</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <div>
+                        <ul class="list-style-circle">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-style-square">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="list-style-upper-roman">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="list-style-upper-alpha" reversed>
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ul class="list-style-no-bullets">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-style-inline">
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=htmlmixed&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-style-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-style-square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Col%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522list-style-upper-roman%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522list-style-upper-alpha%2522%2520reversed%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-style-no-bullets%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-style-inline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1131px; height: 1000px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <h4 class="component-subheading">Example of Stacked Lists</h4>
+                <p>Below is an example of how to have stacked list notifications</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <ul>
+                        <li class="stacked-notif-layout">
+                            <div class="stacked-notif-heading">
+                                <span class="material-icons">insights</span>
+                                <h5>Check out our summer sale offers</h5>
+                            </div>
+                            <div class="stacked-notif-content">
+                                <div class="btn-container">
+                                    <button class="primary-btn">Check out now</button>
+                                    <button class="secondary-btn">Dismiss</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="stacked-notif-layout">
+                            <div class="stacked-notif-heading">
+                                <span class="material-icons">account_circle</span>
+                                <h5>Your Account needs attention</h5>
+                            </div>
+                            <div class="stacked-notif-content">
+                                <div class="btn-container">
+                                    <button class="primary-btn">Check now</button>
+                                    <button class="secondary-btn">Dismiss</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=htmlmixed&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-notif-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-notif-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Einsights%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ECheck%2520out%2520our%2520summer%2520sale%2520offers%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-notif-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-btn%2522%253ECheck%2520out%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522secondary-btn%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stacked-notif-layout%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-notif-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eaccount_circle%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EYour%2520Account%2520needs%2520attention%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stacked-notif-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-btn%2522%253ECheck%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522secondary-btn%2522%253EDismiss%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        style="width: 1131px; height: 553px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+            <article id="navigation-section">
+                <h3>Navigation</h3>
+                <p class="title-caption">Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive. It is a hamburger menu in medium and small devices</p>
+                <h4 class="component-subheading">Example of Nav bar</h4>
+                <p>Below is an example of a typical nav bar</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <nav class="nav-bar">
+                        <div class="nav-elements-left">
+                            <button class="nav-btn-style"><span class="material-icons">menu</span></button>
+                            <h5>Brand Name</h5>
+                        </div>
+                        <div class="nav-elements-right">
+                            <div class="nav-search-container">
+                                <button class="nav-btn-style"><span class="material-icons">search</span></button>
+                                <input type="text" class="nav-search" placeholder="Type to search">
+                            </div>
+                            <button class="nav-btn-style"><span class="material-icons">account_circle</span></button>
+                            <button class="nav-btn-style"><span class="material-icons">shopping_cart</span></button>
+                            <button class="nav-btn-style"><span class="material-icons">star_rate</span></button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=htmlmixed&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-bar%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-elements-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-btn-style%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Emenu%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253EBrand%2520Name%253C%252Fh5%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-elements-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-search-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-btn-style%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Esearch%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522nav-search%2522%2520placeholder%253D%2522Type%2520to%2520search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-btn-style%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eaccount_circle%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-btn-style%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Eshopping_cart%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-btn-style%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar_rate%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+                        style="width: 1131px; height: 348px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </article>
+
+
+            <article id="grids-section">
+                <h3>Grids</h3>
+                <p class="title-caption">Use grid when you want sections in view. Check below some examples of side by side cards.</p>
+                <h4 class="component-subheading">Example of Grid (50:50)</h4>
+                <p>Below is a column grid with ration 50:50</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <div class="grid-simplified grid-50-50">
+                        <div class="grid-left">
+                            <img class="fill-img" src="resources/images/responsive-img.jpg">
+                        </div>
+                        <div class="grid-right">
+                            <h4> Check out some beautiful pictures of the Eiffel Tower</h4>
+                            <div class="btn-container">
+                                <button class="primary-btn">Browse More</button>
+                                <button class="secondary-btn">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="component-subheading">Example of Grid (70:30)</h4>
+                <p>Below is a column grid with ration 70:30</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <div class="grid-simplified grid-70-30">
+                        <div class="grid-left">
+                            <img class="fill-img" src="resources/images/responsive-img.jpg">
+                        </div>
+                        <div class="grid-right">
+                            <h4> Check out some beautiful pictures of the Eiffel Tower</h4>
+                            <div class="btn-container">
+                                <button class="primary-btn">Browse More</button>
+                                <button class="secondary-btn">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="component-subheading">Example of Grid (33:33:33)</h4>
+                <p>Below is a column grid with ration 33:33:33</p>
+                <div class="example-container-col border-medium border-rad-M">
+                    <div class="grid-simplified grid-33-33-33">
+                        <div class="grid-left">
+                            <img class="fill-img" src="resources/images/responsive-img.jpg">
+                        </div>
+                        <div class="grid-mid">
+                            <img class="fill-img" src="resources/images/card-img.jpg">
+                        </div>
+                        <div class="grid-right">
+                            <h4> Check out some beautiful pictures from Autumn collection</h4>
+                            <div class="btn-container">
+                                <button class="primary-btn">Browse More</button>
+                                <button class="secondary-btn">Go back</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-script">
+                </div>
+            </article>
+
+
+            <article id="ratings-section">
+                <h3>Ratings</h3>
+                <p class="title-caption">Ratings components are used to add a user interacting rating system to your web page</p>
+                <h4 class="component-subheading">Example of Rating</h4>
+                <p>Rating component by default comes with 5 stars</p>
+                <div class="example-container-row border-medium border-rad-M">
+                    <div class="ratings-container">
+                        <button class="rating-star" id="star-1"><span class="material-icons">star</span></button>
+                        <button class="rating-star" id="star-2"><span class="material-icons">star</span></button>
+                        <button class="rating-star" id="star-3"><span class="material-icons">star</span></button>
+                        <button class="rating-star" id="star-4"><span class="material-icons">star</span></button>
+                        <button class="rating-star" id="star-5"><span class="material-icons">star</span></button>
+                    </div>
+                </div>
+                <div class="example-script">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C247%2C237%2C1%29&t=vscode&wt=none&l=htmlmixed&width=1131&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=6px&ph=8px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522ratings-container%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522rating-star%2522%2520id%253D%2522star-1%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522rating-star%2522%2520id%253D%2522star-2%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522rating-star%2522%2520id%253D%2522star-3%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522rating-star%2522%2520id%253D%2522star-4%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522rating-star%2522%2520id%253D%2522star-5%2522%253E%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1131px; height: 199px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                 </div>
             </article>
 
