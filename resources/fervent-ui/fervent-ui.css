@@ -4,7 +4,7 @@
 @import "Components/dialogue.css";
 @import "Components/scrollbar.css";
 @import "Components/badge.css";
-@import "Components/header.css";
+@import "Components/navigation.css";
 @import "Components/drawer.css";
 @import "Components/reset.css";
 @import "Components/avatar.css";
@@ -17,3 +17,7 @@
 @import "Components/images.css";
 @import "Components/forms.css";
 @import "Components/sliders.css";
+@import "Components/modal.css";
+@import "Components/lists.css";
+@import "Components/grids.css";
+@import "Components/ratings.css";

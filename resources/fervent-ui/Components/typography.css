@@ -21,3 +21,7 @@ h5 {
 h6 {
     font-size: 0.75rem;
 }
+
+.greyed-out {
+    color: rgb(161, 161, 161);
+}
