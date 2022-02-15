@@ -34,6 +34,13 @@
     display:inline;
 }
 
+.stacked-notif-container {
+    padding: 0rem;
+    position: fixed;
+    left:3px;
+    bottom:0px;
+}
+
 .stacked-notif-layout {
     margin: 0.5rem;
     list-style-type: none;
