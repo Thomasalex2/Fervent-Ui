@@ -7,9 +7,10 @@
     --grey-bg-color: #fafafa;
     --primary-color: #fb923c;
     --secondary-color: #42919E;
-    --black-text-color: #000000;
-    --white-text-color: #FFFFFF;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
     --border-color: #000000;
+    --lightgrey-color: lightgrey;
 }
 
 body {

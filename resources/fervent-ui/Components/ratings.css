@@ -9,7 +9,7 @@
 }
 
 .star-inactive {
-    color: lightgrey;
+    color: var(--lightgrey-color);
 }
 
 .checked {

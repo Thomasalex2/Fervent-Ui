@@ -12,7 +12,7 @@
 }
 
 .snackbar-msg {
-    color: var(--white-text-color);
+    color: var(--white-color);
     padding-right: 10px;
     padding-left: 10px;
     font-size: 0.9rem;
@@ -46,7 +46,7 @@
 
 .snackbar-close-btn {
     font-size: 0.5rem;
-    color: var(--white-text-color);
+    color: var(--white-color);
 }
 
 .snackbar-close-btn:hover {

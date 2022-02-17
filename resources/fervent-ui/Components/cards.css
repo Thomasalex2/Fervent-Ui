@@ -30,7 +30,7 @@
 }
 
 .card-header-title-white {
-    color: var(--white-text-color);
+    color: var(--white-color);
 }
 
 
@@ -119,4 +119,10 @@
 
 .horizontal img {
     width:35%;
+}
+
+.card-center {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
