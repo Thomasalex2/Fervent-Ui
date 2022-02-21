@@ -9,6 +9,7 @@ Fervent UI is an easy-to-use component library that you can use to apply on your
 ## Getting Started
 
 To get get started with fervent ui, you can import the stylesheet from the following link below:
+
 ```https://fervent-ui.netlify.app/resources/fervent-ui/fervent-ui.css```
 
 ### How to import in HTML file
