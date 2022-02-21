@@ -22,16 +22,16 @@ form>h4 {
     text-align: center;
 }
 
-label {
+.form-label {
     grid-column: 1/2;
 }
 
-input {
+.form-input {
     grid-column: 2/3;
 }
 
-input,
-select {
+.form-input,
+.form-select {
     outline: none;
     min-width: 200px;
     max-width: 500px;
@@ -41,24 +41,24 @@ select {
     padding: 0.15rem;
 }
 
-input:focus {
+.form-input:focus {
     border: 2px solid var(--primary-color);
 }
 
-input:disabled {
+.form-input:disabled {
     background-color: var(--lightgrey-color);
 }
 
-input[type=radio],
-input[type=checkbox] {
+.form-input[type=radio],
+.form-input[type=checkbox] {
     min-width: 0rem;
 }
 
-select:focus {
+.form-select:focus {
     border: 2px solid var(--primary-color);
 }
 
-textarea {
+.form-textarea {
     display: block;
     min-width: 50%;
     max-width: 100%;
@@ -71,7 +71,7 @@ textarea {
     padding: 0.15rem;
 }
 
-textarea:focus {
+.form-textarea:focus {
     border: 2px solid var(--primary-color);
 }
 

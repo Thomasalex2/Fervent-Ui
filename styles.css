@@ -74,7 +74,6 @@ body {
 
 .installation-section * {
     text-align: center;
-    max-width: 40rem;
 }
 
 .installation-desc p {
@@ -83,9 +82,8 @@ body {
 
 .import-script {
     margin-top: 2rem;
-    width: 867px; 
     border:0; 
-    overflow:hidden;
+    overflow:auto;
 }
 
 .docs-grid-layout {
@@ -105,6 +103,7 @@ body {
 
 .drawer {
     grid-area: sidebar;
+    margin: -1rem 1rem;
 }
 
 .drawer-btns-container {
