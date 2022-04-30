@@ -51,6 +51,13 @@ button:active {
     transform: scale(.98);
 }
 
+button:disabled {
+    pointer-events: none;
+    background-color: var(--lightgrey-color);
+    border: 2px solid var(--lightgrey-color);
+    color: black;
+}
+
 .secondary-btn:hover {
     background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
