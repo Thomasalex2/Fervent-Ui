@@ -19,7 +19,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color); /* need formula to get it darker */
+    filter: brightness(90%);
 }
 
 .scrollable {
