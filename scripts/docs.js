@@ -1,5 +1,6 @@
 // Linking the button elements
 const top_btn = document.querySelector("#top-btn");
+const theme_lnk = document.querySelector("#theme-lnk");
 const typography_lnk = document.querySelector("#typography-lnk");
 const avatar_lnk = document.querySelector("#avatar-lnk");
 const alerts_lnk = document.querySelector("#alerts-lnk");
@@ -15,7 +16,6 @@ const lists_lnk = document.querySelector("#lists-lnk");
 const navigation_lnk = document.querySelector("#navigation-lnk");
 const grids_lnk = document.querySelector("#grids-lnk");
 const ratings_lnk = document.querySelector("#ratings-lnk");
-
 const show_modal_btn = document.querySelector("#show-modal-btn");
 const close_modal_btn = document.querySelector("#close-modal-btn");
 const modal_element = document.querySelector("#modal-element");
@@ -33,7 +33,7 @@ const showModal = () => modal_element.style.display = 'flex';
 const hideModal = () => modal_element.style.display = 'none';
 
 
-link_array = [top_btn, typography_lnk, avatar_lnk, alerts_lnk, badges_lnk, buttons_lnk, cards_lnk, image_lnk, forms_lnk, toasts_lnk, sliders_lnk, modals_lnk, lists_lnk, navigation_lnk, grids_lnk, ratings_lnk];
+link_array = [top_btn, theme_lnk, typography_lnk, avatar_lnk, alerts_lnk, badges_lnk, buttons_lnk, cards_lnk, image_lnk, forms_lnk, toasts_lnk, sliders_lnk, modals_lnk, lists_lnk, navigation_lnk, grids_lnk, ratings_lnk];
 link_array.forEach(element => element.addEventListener("click", scrollTo));
 
 show_modal_btn.addEventListener("click", showModal);

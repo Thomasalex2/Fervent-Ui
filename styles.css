@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import "resources/fervent-ui/fervent-ui.css";
 
-:root {
-    font-family: 'Roboto', sans-serif;
-    --off-white-bg-color: #fff7ed;
-    --grey-bg-color: #fafafa;
-    --primary-color: #fb923c;
-    --secondary-color: #42919E;
-    --black-color: #000000;
-    --white-color: #FFFFFF;
-    --border-color: #000000;
-    --lightgrey-color: lightgrey;
-}
 
 body {
     background-color: var(--off-white-bg-color);
